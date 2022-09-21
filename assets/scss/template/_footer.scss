@@ -1,0 +1,91 @@
+footer{
+    padding-top: 20px;
+    background-color: $dark-color;
+    color: #FFFFFF;
+    .row{
+        margin: 0;
+    }
+    .main-row{
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    
+        a{
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px; 
+            letter-spacing: 0.18em;
+            color: #FFFFFF;
+        }
+        .footer-link{
+            padding-top: 20px;
+            a{
+                &:hover{
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        select{
+            background-color: $dark-color;
+            color: #FFFFFF;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 12px;
+            width: 150px;
+            height: 40px;
+            padding: 10px 15px;
+            border-radius: 2px;
+            margin-top: 30px;
+            
+            @media only screen and (min-width: 992px){
+                margin-top: 12px;
+            }
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        .logo{
+            @media only screen and (max-width: 991.9px){
+                width: 240px;
+            }
+        }
+    }
+    
+    .bottom-row{
+        font-family: 'Overpass', sans-serif;
+        font-size: 11px;
+        line-height: 18px;
+        color: #FFFFFF;
+        padding: 15px 0;
+
+        p{
+            margin: 0;
+            @media only screen and (max-width: 767.9px){
+                max-width: 290px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+        a{
+            font-family: 'Overpass', sans-serif;
+            font-size: 11px;
+            line-height: 18px;
+            color: #FFFFFF;
+            
+            &:hover{
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+        }
+        .policies-link{
+            padding-left: 5px;
+            
+            &::before{
+                content: '·';
+                padding-right: 5px;
+            }
+        }
+    }
+}

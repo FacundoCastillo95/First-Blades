@@ -1,0 +1,122 @@
+#about-content{
+    padding-top: 30px;
+    padding-bottom: 240px;
+
+    @media only screen and (min-width: 992px) {
+        padding-bottom: 50px;
+    }
+
+    #top-content{
+        background-image: url(../images/about/windmill.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        width: 100%;
+        height: 230px;
+        position: relative;
+
+        @media only screen and (min-width: 992px) {
+            height: 580px;
+        }
+
+        .text-container{
+            padding-top: 15px;
+            position: absolute;
+            background-color: #ffffff;
+            width: 95%;
+            bottom: -230px;
+            left: 0px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            @media only screen and (min-width: 992px) {
+                width: 560px;
+                bottom: -30px;
+                left: -110px;
+            }
+
+            h2{
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 32px;
+                color: $dark-color;
+                
+                @media only screen and (min-width: 992px) {
+                    font-size: 68px;
+                    line-height: 80px;
+                }
+            }
+            p{
+                font-family: din-regular;
+                font-size: 14px;
+                line-height: 25px;
+                letter-spacing: -0.02em;
+                color: $dark-color;
+                max-width: 530px;
+            }
+        }
+    }
+
+    #bottom-content{
+        background-image: url(../images/about/workers.jpg);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        width: 100%;
+        height: 230px;
+        position: relative;
+        margin-top: 240px;
+
+        @media only screen and (min-width: 992px) {
+            height: 455px;
+            margin-top: 85px;
+        }
+
+        .text-container{
+            padding-top: 15px;
+            position: absolute;
+            background-color: #ffffff;
+            width: 95%;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            @media only screen and (max-width: 991.9px) {
+                bottom: -225px;
+                left: 0px;
+            }
+            @media only screen and (min-width: 992px) {
+                width: 560px;
+                top: 55px;
+                right: -475px;
+            }
+
+            h2{
+                font-family: 'Red Hat Display', sans-serif;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 32px;
+                color: $dark-color;
+                
+                @media only screen and (min-width: 992px) {
+                    font-size: 68px;
+                    line-height: 76px;
+                    padding-left: 30px;
+                }
+            }
+            p{
+                font-family: din-regular;
+                font-size: 14px;
+                line-height: 25px;
+                letter-spacing: -0.02em;
+                color: $dark-color;
+                max-width: 530px;
+
+                @media only screen and (min-width: 992px) {
+                    padding-left: 30px;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+}

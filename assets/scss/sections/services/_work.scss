@@ -1,0 +1,94 @@
+#work{
+    text-align: center;
+    background-color: #F5F5F5;
+    padding-top: 35px;
+    overflow: hidden;
+
+    @media only screen and (min-width: 992px) {
+        padding-top: 55px;
+    }
+
+    h2{
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 40px;
+        color: $dark-color;
+
+        @media only screen and (min-width: 992px) {
+            font-size: 60px;
+            line-height: 67px;
+        }
+    }
+    p{
+        padding-top: 20px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        color: #444444;
+
+        @media only screen and (min-width: 992px) {
+            font-size: 26px;
+            line-height: 34px;
+            padding-top: 25px;
+        }
+    }
+
+    #work-swiper{
+        overflow: inherit;
+
+        .swiper-slide{
+            img{
+                max-width: 100%;
+                cursor: pointer;
+            }
+        }
+
+        .swiper-button-next{
+            @media only screen and (min-width: 992px){
+                right: 15px;
+                left: auto;
+            }
+            &::after{
+                content: '\01F852';
+                color: #F5F5F5;
+                font-size: 20px;
+                padding: 0 5px;
+                background-color: $dark-color;
+            }
+        }
+        .swiper-button-prev{
+            @media only screen and (min-width: 992px){
+                left: 15px;
+                right: auto;
+            }
+            &::after{
+                content: '\01F852'; 
+                transform: rotate(180deg);
+                color: #ffffff;
+                font-size: 20px;
+                padding: 0 5px;
+                background-color: $dark-color;
+            }
+        }
+        .swiper-button-disabled{
+            visibility: hidden;
+        }
+        .swiper-slide {opacity: 0.5;}  
+        .swiper-slide.swiper-slide-visible {
+            opacity: 1;
+        }
+    }
+
+    .work-pagination{
+        left: 0;
+        right: 0;
+        margin: 30px auto 0 auto;
+    }
+    .swiper-pagination-bullet{
+        background-color: $dark-color;
+        margin: 0 5px;
+    }
+}

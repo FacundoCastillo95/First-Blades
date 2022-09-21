@@ -1,0 +1,58 @@
+#hero-about{
+    background-image: url(../images/about/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    @media only screen and (min-width: 992px) {
+        height: 540px;
+    }
+    
+    h1{
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        font-size: 34px;
+        line-height: 38px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 390px;
+        padding-top: 85px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+
+        @media only screen and (min-width: 992px) {
+            padding-top: 165px;
+            max-width: 950px;
+            font-size: 60px;
+            line-height: 79px;
+        }
+
+        @media only screen and (max-width: 379.9px) {
+            font-size: 28px;
+        }
+    }
+
+    p{
+        font-family: din-regular;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        max-width: 380px;
+        margin: 0 auto;
+
+        @media only screen and (min-width: 992px) {
+            font-size: 16px;
+            line-height: 29px;
+            max-width: 750px;
+        }
+    }
+
+}

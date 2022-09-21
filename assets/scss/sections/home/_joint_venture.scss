@@ -1,0 +1,206 @@
+#joint-venture{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    @media only screen and (min-width: 992px){
+        padding-bottom: 60px;
+    }
+
+    h2{
+        padding-top: 10px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 34px;
+        color: $dark-color;
+    }
+    p{
+        font-family: din-regular;
+        font-size: 14px;
+        line-height: 21px;
+        color: $dark-color;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 40px;
+        
+        @media only screen and (min-width: 992px){
+            height: 60px;
+        }
+    }
+
+    @each $brand in gr-wind, first-blades, maintfiber-amgl, gr-academy{
+        .#{$brand} {
+            background-image: url('../images/joint-venture/#{$brand}.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            max-width: 100%;
+        }
+    }
+}
+
+#joint-venture-bottom {
+    background-color: #F3F3F3;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    overflow: hidden;
+
+    .row{margin: 0;}
+
+    .img-enercon{
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+    .img-siemens{
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+    .img-vestas{
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+    .img-nordex{
+        max-width: 100%; 
+        position: absolute;
+        left: 60px;
+        top: 90px;
+    }
+    .img-acciona{
+        max-width: 100%; 
+        position: absolute;
+        right: 60px;
+        top: 90px;
+    }
+    .img-ge{
+        max-width: 100%; 
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+    .circle-img{
+        max-width: 100%;
+    }
+
+
+    #joint-venture-bottom-container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        @media screen and (min-width: 992px) {
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 850px;
+        }
+        #jvb-col-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 260px;
+            width: 150px;
+            @media screen and (min-width: 992px) {
+                margin-right: 50px;
+                width: 270px;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+        #jvb-col-2 {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            @media screen and (min-width: 992px) {
+                position: inherit;
+                width: 260px;
+            }
+            img {
+                margin: 0 auto;
+                width: 165px;
+                @media screen and (min-width: 992px) {
+                    width: 260px;
+                }
+            }
+        }
+        #jvb-col-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 260px;
+            position: relative;
+            width: 120px;
+            @media screen and (min-width: 992px) {
+                position: inherit;
+                width: 235px;
+            }
+            #brand-vesta {
+                img {
+                    width: 100%;
+                }
+            }
+            #middle-brands {
+                text-align: center;
+                width: inherit;
+                right: -36px;
+                position: absolute;
+                top: calc(50% - 35px);
+                @media screen and (min-width: 420px) {
+                    right: inherit;
+                }
+                img {
+                    height: 25px;
+                    margin: 5px auto;
+                }
+                @media screen and (min-width: 992px) {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    height: 40px;
+                    justify-content: space-between;
+                    margin-right: inherit;
+                    position: inherit;
+                    top: inherit;
+                    width: inherit;
+                    img {
+                        height: 40px;
+                        margin: inherit;
+                        &:first-child {
+                            margin-right: 5px;
+                        }
+                        &:last-child {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            #brand-ge {
+                margin: 0 auto;
+                height: 60px;
+                width: 60px;
+            }
+            @media screen and (min-width: 992px) {
+                margin-left: 50px;
+                #brand-ge {
+                    height: 115px;
+                    width: 115px;
+                }
+            }
+        }
+    }
+}
