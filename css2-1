@@ -1,0 +1,7 @@
+﻿@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/overpass/v12/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPrOQ.ttf) format('truetype');
+}
